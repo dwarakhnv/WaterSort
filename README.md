@@ -1,8 +1,37 @@
 # WaterSort
 
+Sovles Water Sort for you using a screenshot of the game! You can also manually enter in the colors or make your own games for the computer to solve.
 
-<!-- ![alt text](http://url/to/img.png) -->
 
+
+## Screenshot
+Take a screenshot of a Water Sot Level to auto find the colors and map them to each respective bottle using ImageToGame.py
+ - Note: Screenshots used here are fit to a iPhone 12 screen's RESOLUTION RATIO. Images with same ratio should work as long as the bottles are relatives in the same spots.
+
+![alt text](https://github.com/dwarakhnv/WaterSort/blob/main/GIT_DATA/watersort_level142.jpeg?raw=true)
+
+
+Run: `python3 ./WaterSort/ImageToGame.py IMAGE_PATH 11`
+Output:
+```
+        [0, 1, 0, 2],
+        [3, 4, 5, 5],
+        [6, 2, 0, 7],
+        [2, 6, 1, 7],
+        [1, 4, 5, 3],
+        [1, 2, 3, 7],
+        [6, 8, 8, 6],
+        [4, 4, 7, 8],
+        [3, 8, 5, 0],
+        [],
+        [],
+
+```
+## Incorporate Image to your Dataset
+Add the output from ImageToGame.py into GameLevels.py
+
+
+## Solve Game
 Running: `python3 ./WaterSort/Game.py 142`
 ```
 142

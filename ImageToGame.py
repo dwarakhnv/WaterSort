@@ -88,18 +88,13 @@ def get_bottle_integers(image_path, bottle_coords):
 
 
 if __name__ == "__main__":
-    # python3 ./WaterSort/ImageToGame.py IMAGE_PATH NUM_BOTTLES
+    # python3 ./ImageToGame.py IMAGE_PATH NUM_BOTTLES
 
     parser = argparse.ArgumentParser(description ='ImageToGame - Convert Phone Screenshot Into Solvable Game.')
     parser.add_argument('image_path', type=str, help ='Path to Screenshot', default=None)
     parser.add_argument('nb', type=int, help ='Number of Bottles', default=11)
     args = parser.parse_args()
 
-    # image_path = '/home/happy/Pictures/watersort_level142.jpeg'
-    # num_bottles = 11
-    # image_path = '/home/happy/Pictures/watersort_level145.jpeg'
-    # image_path = '/home/happy/Pictures/watersort_level147.jpeg'
-    # image_path = '/home/happy/Pictures/watersort_level157.jpeg'
     # image_path = '/home/happy/Pictures/watersort_level159.jpeg'
     # num_bottles = 14
 
